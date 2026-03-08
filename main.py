@@ -1,16 +1,12 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+entradas = [1, 7, 5]
+pesos = [0.8, 0.1, 0]
 
+def soma(entradas, pesos):
+    s = 0
+    for i in range(3):
+        print(entradas[i])
+        print(pesos[i])
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Python Redes Neurais')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+soma(entradas, pesos)
