@@ -1,16 +1,10 @@
+import numpy as np
 
-
-entradas = [1, 7, 5]
-pesos = [0.8, 0.1, 0]
+entradas = np.array([1, 7, 5])
+pesos = np.array([0.8, 0.1, 0])
 
 def soma(entradas, pesos):
-    soma = 0
-    for i in range(3):
-        # print(entradas[i])
-        # print(pesos[i])
-
-        soma += entradas[i] * pesos[i]
-    return soma
+    return entradas.dot(pesos)
 
 def stepFuction(soma):
     if soma >= 1:
